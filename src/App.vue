@@ -13,7 +13,6 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import { Flicking } from '@egjs/vue-flicking';
 import mockResponse from '@/components/mockBanners';
 
 export default {
@@ -24,8 +23,7 @@ export default {
     }
   },
   components: {
-    HelloWorld,
-    Flicking
+    HelloWorld
   }
 }
 </script>
