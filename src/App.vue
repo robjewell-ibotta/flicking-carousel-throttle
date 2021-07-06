@@ -2,11 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>here!!</h1>
     <Flicking 
+      v-if="images.length"
       :options="{ circular: true, renderOnlyVisible: true }"
       >
       
-      <img :src="banner.image.url" :alt="banner.image.alt" class="banner-image" />
+      <img v-for="banner in images" :key="banner.id" :src="banner.image.url" :alt="banner.image.alt" class="banner-image" />
     </Flicking>
   </div>
 </template>
@@ -19,12 +21,21 @@ export default {
   name: 'App',
   data() {
     return {
-      banners: mockResponse
+      bannersData: mockResponse
+    }
+  },
+  computed: {
+    banners() {
+      return this.bannersData.data
+    },
+    images() {
+      return this.banners.images
     }
   },
   components: {
     HelloWorld
   }
+
 }
 </script>
 
