@@ -1,4 +1,4 @@
-{
+module.exports = {
   "root": true,
   "env": {
     "node": true
@@ -9,7 +9,9 @@
     "@vue/typescript"
   ],
   "parserOptions": {
+    "project": "egjs-flicking/tsconfig.json",
     "ecmaVersion": 2020,
-    "tsconfigRootDir": __dirname
+    "tsconfigRootDir": __dirname,
+    "sourceType": "module"
   }
 }
