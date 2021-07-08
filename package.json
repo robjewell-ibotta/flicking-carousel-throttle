@@ -11,7 +11,7 @@
     "@egjs/flicking": "file:../../open-source/forks/egjs-flicking",
     "@egjs/vue-flicking": "file:../../open-source/forks/egjs-flicking/packages/vue-flicking",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
